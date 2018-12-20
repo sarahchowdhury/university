@@ -1,0 +1,24 @@
+insert into department values ('CSE','campus-1',138),('EEE','campus-1',138),('BBA','campus-2',138),('ETE','campus-4',138);
+insert into student values ('011141116','Sultana Kowser','sarahkawser00@gmail.com','CSE',0,'121212'),
+('011143062','Abdullah Al Noman','noman13@gmail.com','CSE',0,'151515'),
+('011143063','Moumita Kabir','moumitakabir13@gmail.com','CSE',0,'232323'),
+('011143076','Sagor Sarker','sagor13@gmail.com','CSE',0,'131313'),('011143040','Jahir Ahmed','jahir13@gmail.com','CSE',0,'101010');
+insert into admin values ('111222','12345'),('333444','67890');
+insert into course values ('CSI-121','Structure Programing Language','CSE',3), ('CSI-218','Data Structure Lab','CSE',1), ('CSI-122','Structure Programing Language Lab','CSE',1),('CSI-217','Data Structure','CSE',3),('CSI-411','Object Oriented Programing','CSE',3),('CSI-412','Object Oriented Programing Lab','CSE',1),('EEE-210','Electrical Circuit','EEE',3),('EEE-211','Electrical Circuit Lab ','EEE',1),('MATH-003','Elementary Calculas','CSE',3),('CSE-007','Elementary Calculas','EEE',3),('CSE-210','Elementary Calculas','BBA',3),('BBA-119','Finance','BBA',3),('BBA-103','Management','BBA',3)
+,('PHY-105','Physics','CSE',3);
+insert into prereq values ('CSI-217','CSI-121'),('EEE-210','CSE-007'),('EEE-211','CSE-007'),('BBA-119','CSE-210'),('BBA-103','BBA-119'),('CSI-218','CSI-122');
+insert into grade_value values ('A',4.00),('A-',3.87),('B+',3.33),('B',3.00),('B-',2.67),('C+',2.33),('C',2.00),('C-',1.67),('D+',1.33),('D',1.00),('F',0.00);
+
+insert into time_slot values ("A","Mon","8.30","9.50");
+insert into time_slot values ("B","Mon","2.10","3.30");
+insert into time_slot values ("C","Tues","9.55","11.15");
+insert into time_slot values ("D","Tues","3.30","5.00");
+insert into time_slot values ("E","Wed","11.20","12.40");
+insert into time_slot values ("F","Wed","2.10","5.00");
+insert into time_slot values ("G","Sun","12.45","2.05");
+insert into time_slot values ("H","Sun","8.30","11.20");
+INSERT INTO `classroom` (`building`, `room_number`, `capacity`) VALUES ('campus-1', '102', '30'), ('campus-1', '104', '30'), ('campus-1', '106', '30'), ('campus-1', '111', '30'), ('campus-1', '206', '30'), ('campus-1', '211', '30'), ('campus-1', '412', '30'), ('campus-4', '4302', '30'), ('campus-4', '4405', '30'), ('campus-4', '4602', '30');
+INSERT INTO exam_routine VALUES ("MATH-003","2","9.00");
+INSERT INTO exam_routine VALUES ("CSI-411","2","9.00");
+INSERT INTO exam_routine VALUES ("CSI-121","5","2.30");
+INSERT INTO exam_routine VALUES ("PHY-105","5","2.30");

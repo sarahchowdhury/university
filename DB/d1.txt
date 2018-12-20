@@ -1,0 +1,146 @@
+create table department
+	(dept_name		varchar(100), 
+	 building		varchar(100), 
+          tot_cred		numeric(3,0) check (tot_cred >= 0),
+	 primary key (dept_name)
+	);
+
+
+create table student
+	(ID			varchar(100), 
+	 name			varchar(20) not null, 
+         email                  varchar(100),
+	 dept_name		varchar(20), 
+	 comp_cred		numeric(3,0) check (tot_cred >= 0),
+         password               varchar(10),
+	 primary key (ID),
+	 foreign key (dept_name) references department(dept_name) 
+		on delete set null
+	);
+create table classroom
+	(building		varchar(15),
+	 room_number		varchar(7),
+	 capacity		numeric(4,0),
+	 primary key (building, room_number)
+	);
+create table course
+	(course_id		varchar(8), 
+	 title			varchar(50), 
+	 dept_name		varchar(20),
+	 credits		numeric(2,0) check (credits > 0),
+	 primary key (course_id),
+	 foreign key (dept_name) references department(dept_name) 
+		on delete set null
+	);
+
+create table time_slot
+	(time_slot_id		varchar(4),
+	 day			varchar(100),
+	 start		numeric(3,2),
+	 
+	 end			numeric(3,2) ,
+	 primary key (time_slot_id, day, start)
+	);
+create table prereq
+	(course_id		varchar(8), 
+	 prereq_id		varchar(8),
+	 primary key (course_id, prereq_id),
+	 foreign key (course_id) references course(course_id) 
+		on delete cascade,
+	 foreign key (prereq_id) references course(course_id) 
+	);
+
+
+
+create table section
+	(course_id		varchar(8), 
+         sec_id			varchar(8),
+	 semester		varchar(6)
+		check (semester in ('Fall', 'Spring', 'Summer')), 
+	 year			numeric(4,0),
+	 building		varchar(15),
+	 room_number		varchar(7),
+	 time_slot_id		varchar(4),
+	 primary key (course_id, sec_id, semester, year),
+	 foreign key (course_id) references course(course_id) 
+		on delete cascade,
+          foreign key (time_slot_id) references time_slot(time_slot_id) 
+		on delete cascade,
+	 foreign key (building, room_number) references classroom(building, room_number) 
+		on delete set null
+	);
+create table takes
+	(ID			varchar(100), 
+	 course_id		varchar(8),
+	 sec_id			varchar(8), 
+	 semester		varchar(6),
+	 year			numeric(4,0),
+	 primary key (ID, course_id, sec_id, semester, year),
+	 foreign key (course_id,sec_id, semester, year) references section (course_id,sec_id, semester, year) 
+		on delete cascade,
+	 foreign key (ID) references student(ID) 
+		on delete cascade
+	);
+
+create table grade_value
+       ( grade   varchar(5),
+         grade_val varchar(5),
+         primary key(grade,grade_val)
+         
+       );
+
+create table result
+
+	(ID			varchar(100), 
+          course_id		varchar(8), 
+         grade                  varchar(5),
+          primary key (ID,course_id),
+	 foreign key (course_id) references course(course_id) 
+		on delete cascade,
+	 foreign key (ID) references student(ID),
+         foreign key(grade) references grade_value(grade)
+ 
+	);
+create table registration
+	(ID			varchar(100), 
+          course_id		varchar(8), 
+          sec_id			varchar(8),
+	 semester		varchar(6), 
+	 year			numeric(4,0), 
+         time_slot_id		varchar(4),
+         approval               varchar(4),
+	 foreign key (ID) references student(ID),
+         foreign key (course_id,sec_id,semester,year) references section(course_id,sec_id,semester,year),
+          foreign key(time_slot_id) references time_slot(time_slot_id)
+ 
+	);
+create table account
+	(ID			varchar(5), 
+          tot_amnt              int,
+           paid            int,
+           due             int,
+           balance         int,
+          primary key (ID),
+	 
+	 foreign key (ID) references student(ID)
+ 
+        );
+create table scriptcheck
+        ( ID         varchar(100),
+          course_id		varchar(8), 
+          sec_id			varchar(8),
+          foreign key (ID) references student(ID),
+         foreign key (course_id,sec_id) references section(course_id,sec_id)
+);
+create table admin(
+   ID varchar(100),
+   password varchar(8),
+   primary key(ID)
+);
+create table exam_routine
+	(course_id		varchar(8), 
+	 day			varchar(50), 
+	time	numeric(3,2),
+	 foreign key (course_id) references course(course_id) 
+		on delete cascade
+	);
