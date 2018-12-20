@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Calander</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   
+
+  </head>
+  <body>
+<form name="frmAcademicCalander"  action="calender.php" method="post">    
+
+
+    <table class="table table-striped" style="max-width:800px;margin:auto; margin-top:50px;">  
+
+    <tr class="danger">
+      <td colspan="3" align="center"><h2>Academic Calander</h2></td>
+    </tr>
+
+    <tr>
+        <td>SL</td>
+        <td>:</td>
+        <td><input type="text" name="txtSL" class="form-control" style="max-width:350px;" placeholder="SL"></td>
+    </tr>
+
+
+    <tr>
+        <td>Timester</td>
+        <td>:</td>
+        <td>
+<select  class="form-control" style="max-width:350px;" name="timester">
+  <option>Select Timester</option>
+  <option>Summer-2018</option>
+  <option>Spring-2019</option>
+
+</select>
+          </td>
+    </tr>
+
+    <tr>
+        <td>Date</td>
+        <td>:</td>
+        <td><input type="text" name="date" class="form-control" style="max-width:350px;"></td>
+    </tr>
+
+    <tr>
+        <td>Day</td>
+        <td>:</td>
+        <td><input type="text" name="txtDay" class="form-control" style="max-width:350px;" placeholder="Sunday-Monday"></td>
+    </tr>
+
+    <tr>
+        <td>Details</td>
+        <td>:</td>
+        <td><textarea name="details" class="form-control" style="max-width:350px;" placeholder="Details"> </textarea></td>
+    </tr>
+
+    <tr>
+        <td colspan="3" align="center">
+          
+        <button type="submit" class="btn btn-default">Save</button>
+
+        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-success">Delete</button>
+        <button type="submit" class="btn btn-info">View</button>
+        <button type="submit" class="btn btn-warning">Clear</button>
+        <button type="submit" class="btn btn-danger">Exit</button>
+      </td>
+        
+    </tr>
+
+   </table>
+
+</form>
+
+    <script type="text/javascript" src="bootstrap/js/jquery-1.10.2.min.js"></script>
+      <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="bootstrap/js/all.min.js"></script>
+  </body>
+</html>

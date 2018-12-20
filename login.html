@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>UIU EMS LOGIN</title>
+   <style type="text/css">
+   body{
+  margin: 0 auto;
+  background-image: url("./img.png");
+  background-repeat: no-repeat;
+  background-size: 100% 720px;
+
+}
+     .container{
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  background-color: rgba(0, 0, 0,0.5);
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 80px;
+  
+
+}
+.container img{
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+input{
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 30px;
+  font-weight: bolder;
+}
+
+input{
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 30px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bolder;
+}
+.form-input::before{
+  content: "\f007";
+  position: absolute;
+  font-family: "FontAwesome";
+  padding-left: 5px;
+  padding-top: 7px;
+  font-size: 30px;
+}
+.form-input:nth-child(2)::before{
+  content: "\f023"; 
+}
+.btn-login{
+  height: 45px;
+  width: 150px;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: none;
+  background-color: #cc5800;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+a{
+  color: #fff;
+}
+
+   </style>
+   
+<link rel="stylesheet" href="https://use.fontawesome.com/26bd665a6a.css">
+
+
+   <head>
+ </head>
+ <body>
+   <div class="container">
+   <img src="men.png">
+    <form  action="login.php" method="POST">
+     <div class="form-input">
+     
+      <input type="text" name="username" placeholder="Enter Username">
+     </div>
+     <div class="form-input">
+     
+      <input type="password" name="password" placeholder="Enter Password">
+     </div>
+     <input type="submit" name="submit" value="LOG IN" class="btn-login"><br>
+     <a href="#" >Forget password?</a2>
+    </form>
+   </div>
+
+ </body>
+ </html>
