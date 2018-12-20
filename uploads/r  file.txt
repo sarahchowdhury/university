@@ -1,0 +1,595 @@
+ nomao$city_intersect_max<-as.integer(nomao$city_intersect_max)
+ nomao$city_intersect_min<-as.integer(nomao$city_intersect_min)
+ nomao$city_levenshtein_sim<-as.integer(nomao$city_levenshtein_sim)
+ nomao$city_trigram_sim<-as.integer(nomao$city_trigram_sim)
+ nomao$city_levenshtein_term<-as.integer(nomao$city_levenshtein_term)
+ nomao$city_trigram_term<-as.integer(nomao$city_trigram_term)
+ nomao$zip_intersect_max<-as.integer(nomao$zip_intersect_max)
+ nomao$zip_intersect_min<-as.integer(nomao$zip_intersect_min)
+ nomao$zip_levenshtein_sim<-as.integer(nomao$zip_levenshtein_sim)
+ nomao$zip_trigram_sim<-as.integer(nomao$zip_trigram_sim)
+ nomao$zip_levenshtein_term<-as.integer(nomao$zip_levenshtein_term)
+ nomao$zip_trigram_term<-as.integer(nomao$zip_trigram_term)
+ nomao$street_intersect_max<-as.integer(nomao$street_intersect_max)
+ nomao$street_intersect_min<-as.integer(nomao$street_intersect_min)
+ nomao$street_levenshtein_sim<-as.integer(nomao$street_levenshtein_sim)
+ nomao$street_trigram_sim<-as.integer(nomao$street_trigram_sim)
+ nomao$street_levenshtein_term<-as.integer(nomao$street_levenshtein_term)
+ nomao$street_trigram_term<-as.integer(nomao$street_trigram_term)
+  nomao$countryname_intersect_max<-as.integer(nomao$countryname_intersect_max)
+ nomao$countryname_intersect_min<-as.integer(nomao$countryname_intersect_min)
+ nomao$countryname_levenshtein_sim<-as.integer(nomao$countryname_levenshtein_sim)
+ nomao$countryname_trigram_sim<-as.integer(nomao$countryname_trigram_sim)
+ nomao$countryname_levenshtein_term<-as.integer(nomao$countryname_levenshtein_term)
+ nomao$countryname_trigram_term<-as.integer(nomao$countryname_trigram_term)
+  nomao$geocoderinputaddress_intersect_max<-as.integer(nomao$geocoderinputaddress_intersect_max)
+ nomao$geocoderinputaddress_intersect_min<-as.integer(nomao$geocoderinputaddress_intersect_min)
+ nomao$geocoderinputaddress_levenshtein_sim<-as.integer(nomao$geocoderinputaddress_levenshtein_sim)
+ nomao$geocoderinputaddress_trigram_sim<-as.integer(nomao$geocoderinputaddress_trigram_sim)
+ nomao$geocoderinputaddress_levenshtein_term<-as.integer(nomao$geocoderinputaddress_levenshtein_term)
+ nomao$geocoderinputaddress_trigram_term<-as.integer(nomao$geocoderinputaddress_trigram_term)
+  nomao$geocoderlocalityname_intersect_max<-as.integer(nomao$geocoderlocalityname_intersect_max)
+ nomao$geocoderlocalityname_intersect_min<-as.integer(nomao$geocoderlocalityname_intersect_min)
+ nomao$geocoderlocalityname_levenshtein_sim<-as.integer(nomao$geocoderlocalityname_levenshtein_sim)
+ nomao$geocoderlocalityname_trigram_sim<-as.integer(nomao$geocoderlocalityname_trigram_sim)
+ nomao$geocoderlocalityname_levenshtein_term<-as.integer(nomao$geocoderlocalityname_levenshtein_term)
+ nomao$geocoderlocalityname_trigram_term<-as.integer(nomao$geocoderlocalityname_trigram_term)
+  nomao$geocoderoutputaddress_intersect_max<-as.integer(nomao$geocoderoutputaddress_intersect_max)
+ nomao$geocoderoutputaddress_intersect_min<-as.integer(nomao$geocoderoutputaddress_intersect_min)
+ nomao$geocoderoutputaddress_levenshtein_sim<-as.integer(nomao$geocoderoutputaddress_levenshtein_sim)
+ nomao$geocoderoutputaddress_trigram_sim<-as.integer(nomao$geocoderoutputaddress_trigram_sim)
+ nomao$geocoderoutputaddress_levenshtein_term<-as.integer(nomao$geocoderoutputaddress_levenshtein_term)
+ nomao$geocoderoutputaddress_trigram_term<-as.integer(nomao$geocoderoutputaddress_trigram_term)
+  nomao$geocoderpostalcodenumber_intersect_max<-as.integer(nomao$geocoderpostalcodenumber_intersect_max)
+ nomao$geocoderpostalcodenumber_intersect_min<-as.integer(nomao$geocoderpostalcodenumber_intersect_min)
+ nomao$geocoderpostalcodenumber_levenshtein_sim<-as.integer(nomao$geocoderpostalcodenumber_levenshtein_sim)
+ nomao$geocoderpostalcodenumber_trigram_sim<-as.integer(nomao$geocoderpostalcodenumber_trigram_sim)
+ nomao$geocoderpostalcodenumber_levenshtein_term<-as.integer(nomao$geocoderpostalcodenumber_levenshtein_term)
+ nomao$geocoderpostalcodenumber_trigram_term<-as.integer(nomao$geocoderpostalcodenumber_trigram_term)
+  nomao$geocodercountrynamecode_intersect_max<-as.integer(nomao$geocodercountrynamecode_intersect_max)
+ nomao$geocodercountrynamecode_intersect_min<-as.integer(nomao$geocodercountrynamecode_intersect_min)
+ nomao$geocodercountrynamecode_levenshtein_sim<-as.integer(nomao$geocodercountrynamecode_levenshtein_sim)
+ nomao$geocodercountrynamecode_trigram_sim<-as.integer(nomao$geocodercountrynamecode_trigram_sim)
+ nomao$geocodercountrynamecode_levenshtein_term<-as.integer(nomao$geocodercountrynamecode_levenshtein_term)
+ nomao$geocodercountrynamecode_trigram_term<-as.integer(nomao$geocodercountrynamecode_trigram_term)
+  nomao$fax_diff<-as.integer(nomao$fax_diff)
+ nomao$fax_levenshtein<-as.integer(nomao$fax_levenshtein)
+ nomao$fax_trigram<-as.integer(nomao$fax_trigram)
+ nomao$phone_diff<-as.integer(nomao$phone_diff)
+  nomao$phone_levenshtein<-as.integer(nomao$phone_levenshtein)
+ nomao$phone_trigram<-as.integer(nomao$phone_trigram)
+ nomao$street_number_diff<-as.integer(nomao$street_number_diff)
+ nomao$street_number_levenshtein<-as.integer(nomao$street_number_levenshtein)
+ nomao$street_number_trigram<-as.integer(nomao$street_number_trigram)
+  nomao$geocode_coordinates_long_diff<-as.integer(nomao$geocode_coordinates_long_diff)
+ nomao$geocode_coordinates_long_levenshtein<-as.integer(nomao$geocode_coordinates_long_levenshtein)
+ nomao$geocode_coordinates_long_trigram<-as.integer(nomao$geocode_coordinates_long_trigram)
+  nomao$geocode_coordinates_lat_diff<-as.integer(nomao$geocode_coordinates_lat_diff)
+ nomao$geocode_coordinates_lat_levenshtein<-as.integer(nomao$geocode_coordinates_lat_levenshtein)
+ nomao$geocode_coordinates_lat_trigram<-as.integer(nomao$geocode_coordinates_lat_trigram)
+   nomao$coordinates_long_diff<-as.integer(nomao$coordinates_long_diff)
+ nomao$coordinates_long_levenshtein<-as.integer(nomao$coordinates_long_levenshtein)
+ nomao$coordinates_long_trigram<-as.integer(nomao$coordinates_long_trigram)
+  nomao$coordinates_lat_diff<-as.integer(nomao$coordinates_lat_diff)
+ nomao$coordinates_lat_levenshtein<-as.integer(nomao$coordinates_lat_levenshtein)
+ 
+ nomao$coordinates_diff<-as.integer(nomao$coordinates_diff)
+ 
+ nomao$geocode_coordinates_diff<-as.integer(nomao$geocode_coordinates_diff)
+ nomao$coordinates_lat_trigram<-as.integer(nomao$coordinates_lat_trigram)
+ 
+ #check
+ str(nomao)
+'data.frame':	1999 obs. of  120 variables:
+ $ id                                       : Factor w/ 1999 levels "0#1","0#2","0#3",..: 1 2 3 1762 1795 1905 1900 39 76 273 ...
+ $ clean_name_intersect_min                 : num  1 1 1 1 0 1 1 1 1 1 ...
+ $ clean_name_intersect_max                 : num  1 0.75 1 0.75 0 ...
+ $ clean_name_levenshtein_sim               : num  1 0.857 1 0.857 0.25 ...
+ $ clean_name_trigram_sim                   : num  1 0.857 1 0.857 0 ...
+ $ clean_name_levenshtein_term              : num  1 0.895 1 0.842 0.25 ...
+ $ clean_name_trigram_term                  : num  1 0.947 1 0.833 0 ...
+ $ clean_name_including                     : Factor w/ 2 levels "n","s": 2 2 2 2 1 2 2 2 2 2 ...
+ $ clean_name_equality                      : Factor w/ 2 levels "n","s": 2 1 2 1 1 1 1 1 1 1 ...
+ $ city_intersect_min                       : int  1 1 1 4 1 1 1 1 1 4 ...
+ $ city_intersect_max                       : int  1 1 1 6 1 1 1 1 1 6 ...
+ $ city_levenshtein_sim                     : int  1 1 1 19 1 1 1 1 1 19 ...
+ $ city_trigram_sim                         : int  1 1 1 10 1 1 1 1 1 10 ...
+ $ city_levenshtein_term                    : int  1 1 1 17 1 1 1 1 1 17 ...
+ $ city_trigram_term                        : int  1 1 1 12 1 1 1 1 1 12 ...
+ $ city_including                           : Factor w/ 3 levels "m","n","s": 1 1 1 3 1 1 1 1 1 3 ...
+ $ city_equality                            : Factor w/ 3 levels "m","n","s": 1 1 1 3 1 1 1 1 1 3 ...
+ $ zip_intersect_min                        : int  1 1 1 4 1 1 1 1 1 2 ...
+ $ zip_intersect_max                        : int  1 1 1 4 1 1 1 1 1 2 ...
+ $ zip_levenshtein_sim                      : int  1 1 1 7 1 1 1 1 1 3 ...
+ $ zip_trigram_sim                          : int  1 1 1 8 1 1 1 1 1 2 ...
+ $ zip_levenshtein_term                     : int  1 1 1 8 1 1 1 1 1 3 ...
+ $ zip_trigram_term                         : int  1 1 1 8 1 1 1 1 1 2 ...
+ $ zip_including                            : Factor w/ 3 levels "m","n","s": 1 1 1 3 1 1 1 1 1 2 ...
+ $ zip_equality                             : Factor w/ 3 levels "m","n","s": 1 1 1 3 1 1 1 1 1 2 ...
+ $ street_intersect_min                     : int  1 1 1 15 1 1 1 1 1 10 ...
+ $ street_intersect_max                     : int  1 1 1 20 1 1 1 1 1 12 ...
+ $ street_levenshtein_sim                   : int  1 1 1 660 1 1 1 1 1 612 ...
+ $ street_trigram_sim                       : int  1 1 1 307 1 1 1 1 1 289 ...
+ $ street_levenshtein_term                  : int  1 1 1 167 1 1 1 1 1 141 ...
+ $ street_trigram_term                      : int  1 1 1 242 1 1 1 1 1 212 ...
+ $ street_including                         : Factor w/ 3 levels "m","n","s": 1 1 1 3 1 1 1 1 1 2 ...
+ $ street_equality                          : Factor w/ 3 levels "m","n","s": 1 1 1 3 1 1 1 1 1 2 ...
+ $ website_intersect_min                    : Factor w/ 11 levels "?","0","0.142857",..: 1 1 1 1 1 11 11 1 1 6 ...
+ $ website_intersect_max                    : Factor w/ 14 levels "?","0","0.1",..: 1 1 1 1 1 14 14 1 1 6 ...
+ $ website_levenshtein_sim                  : Factor w/ 22 levels "?","0.263889",..: 1 1 1 1 1 22 22 1 1 5 ...
+ $ website_trigram_sim                      : Factor w/ 21 levels "?","0.047619",..: 1 1 1 1 1 21 21 1 1 5 ...
+ $ website_levenshtein_term                 : Factor w/ 18 levels "?","0.181818",..: 1 1 1 1 1 18 18 1 1 5 ...
+ $ website_trigram_term                     : Factor w/ 22 levels "?","0.0322581",..: 1 1 1 1 1 22 22 1 1 6 ...
+ $ website_including                        : Factor w/ 3 levels "m","n","s": 1 1 1 1 1 3 3 1 1 2 ...
+ $ website_equality                         : Factor w/ 3 levels "m","n","s": 1 1 1 1 1 3 3 1 1 2 ...
+ $ countryname_intersect_min                : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ countryname_intersect_max                : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ countryname_levenshtein_sim              : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ countryname_trigram_sim                  : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ countryname_levenshtein_term             : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ countryname_trigram_term                 : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ countryname_including                    : Factor w/ 3 levels "m","n","s": 1 1 1 1 1 1 1 1 1 1 ...
+ $ countryname_equality                     : Factor w/ 3 levels "m","n","s": 1 1 1 1 1 1 1 1 1 1 ...
+ $ geocoderlocalityname_intersect_min       : int  3 3 3 3 3 3 3 3 3 3 ...
+ $ geocoderlocalityname_intersect_max       : int  3 3 3 3 3 3 3 3 3 3 ...
+ $ geocoderlocalityname_levenshtein_sim     : int  6 6 6 6 6 6 6 6 6 6 ...
+ $ geocoderlocalityname_trigram_sim         : int  4 4 4 4 4 4 4 4 4 4 ...
+ $ geocoderlocalityname_levenshtein_term    : int  6 6 6 6 6 6 6 6 6 6 ...
+ $ geocoderlocalityname_trigram_term        : int  4 4 4 4 4 4 4 4 4 4 ...
+ $ geocoderlocalityname_including           : Factor w/ 3 levels "m","n","s": 3 3 3 3 3 3 3 3 3 3 ...
+ $ geocoderlocalityname_equality            : Factor w/ 3 levels "m","n","s": 3 3 3 3 3 3 3 3 3 3 ...
+ $ geocoderinputaddress_intersect_min       : int  22 22 22 21 27 17 22 22 27 12 ...
+ $ geocoderinputaddress_intersect_max       : int  33 33 37 27 42 27 33 37 42 20 ...
+ $ geocoderinputaddress_levenshtein_sim     : int  876 876 918 828 935 860 908 865 935 230 ...
+ $ geocoderinputaddress_trigram_sim         : int  496 496 529 478 558 454 525 519 558 267 ...
+ $ geocoderinputaddress_levenshtein_term    : int  295 347 382 337 206 194 342 201 393 169 ...
+ $ geocoderinputaddress_trigram_term        : int  430 474 510 460 535 310 469 349 535 263 ...
+ $ geocoderinputaddress_including           : Factor w/ 3 levels "m","n","s": 2 2 2 2 3 2 2 2 3 2 ...
+ $ geocoderinputaddress_equality            : Factor w/ 3 levels "m","n","s": 2 2 2 2 3 2 2 2 3 2 ...
+ $ geocoderoutputaddress_intersect_min      : int  1 1 1 1 1 0 1 1 1 0 ...
+ $ geocoderoutputaddress_intersect_max      : int  1 1 1 1 1 0 1 1 1 0 ...
+ $ geocoderoutputaddress_levenshtein_sim    : int  1 1 1 1 1 0 1 1 1 0 ...
+ $ geocoderoutputaddress_trigram_sim        : int  1 1 1 1 1 0 1 1 1 0 ...
+ $ geocoderoutputaddress_levenshtein_term   : int  1 1 1 1 1 0 1 1 1 0 ...
+ $ geocoderoutputaddress_trigram_term       : int  1 1 1 1 1 0 1 1 1 0 ...
+ $ geocoderoutputaddress_including          : Factor w/ 2 levels "n","s": 2 2 2 2 2 1 2 2 2 1 ...
+ $ geocoderoutputaddress_equality           : Factor w/ 2 levels "n","s": 2 2 2 2 2 1 2 2 2 1 ...
+ $ geocoderpostalcodenumber_intersect_min   : int  4 4 4 4 4 2 4 4 4 4 ...
+ $ geocoderpostalcodenumber_intersect_max   : int  4 4 4 4 4 2 4 4 4 4 ...
+ $ geocoderpostalcodenumber_levenshtein_sim : int  5 5 5 5 5 4 5 5 5 5 ...
+ $ geocoderpostalcodenumber_trigram_sim     : int  8 8 8 8 8 4 8 8 8 8 ...
+ $ geocoderpostalcodenumber_levenshtein_term: int  5 5 5 5 5 4 5 5 5 5 ...
+ $ geocoderpostalcodenumber_trigram_term    : int  8 8 8 8 8 4 8 8 8 8 ...
+ $ geocoderpostalcodenumber_including       : Factor w/ 3 levels "m","n","s": 3 3 3 3 3 2 3 3 3 3 ...
+ $ geocoderpostalcodenumber_equality        : Factor w/ 3 levels "m","n","s": 3 3 3 3 3 2 3 3 3 3 ...
+ $ geocodercountrynamecode_intersect_min    : int  2 2 2 2 2 2 2 2 2 2 ...
+ $ geocodercountrynamecode_intersect_max    : int  2 2 2 2 2 2 2 2 2 2 ...
+ $ geocodercountrynamecode_levenshtein_sim  : int  2 2 2 2 2 2 2 2 2 2 ...
+ $ geocodercountrynamecode_trigram_sim      : int  2 2 2 2 2 2 2 2 2 2 ...
+ $ geocodercountrynamecode_levenshtein_term : int  2 2 2 2 2 2 2 2 2 2 ...
+ $ geocodercountrynamecode_trigram_term     : int  2 2 2 2 2 2 2 2 2 2 ...
+ $ geocodercountrynamecode_including        : Factor w/ 2 levels "m","s": 2 2 2 2 2 2 2 2 2 2 ...
+ $ geocodercountrynamecode_equality         : Factor w/ 2 levels "m","s": 2 2 2 2 2 2 2 2 2 2 ...
+ $ phone_diff                               : int  1 1 1 30 22 22 22 21 1 31 ...
+ $ phone_levenshtein                        : int  1 1 1 3 12 12 12 11 1 4 ...
+ $ phone_trigram                            : int  1 1 1 2 14 14 14 13 1 2 ...
+ $ phone_equality                           : Factor w/ 3 levels "m","n","s": 1 1 1 2 3 3 3 2 1 2 ...
+ $ fax_diff                                 : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ fax_levenshtein                          : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ fax_trigram                              : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ fax_equality                             : Factor w/ 2 levels "m","s": 1 1 1 1 1 1 1 1 1 1 ...
+ $ street_number_diff                       : int  116 116 116 116 1 116 116 116 116 1 ...
+ $ street_number_levenshtein                : int  8 8 8 8 1 8 8 8 8 1 ...
+  [list output truncated]
+ nomao1<-nomao
+ nomao1$id<-NULL
+#missing values
+
+ #missing values
+ 
+  colSums(sapply(nomao, is.na))
+                                       id                  clean_name_intersect_min 
+                                        0                                         0 
+                 clean_name_intersect_max                clean_name_levenshtein_sim 
+                                        0                                         0 
+                   clean_name_trigram_sim               clean_name_levenshtein_term 
+                                        0                                         0 
+                  clean_name_trigram_term                      clean_name_including 
+                                        0                                         0 
+                      clean_name_equality                        city_intersect_min 
+                                        0                                       752 
+                       city_intersect_max                      city_levenshtein_sim 
+                                      752                                       752 
+                         city_trigram_sim                     city_levenshtein_term 
+                                      752                                       752 
+                        city_trigram_term                            city_including 
+                                      752                                         0 
+                            city_equality                         zip_intersect_min 
+                                        0                                       830 
+                        zip_intersect_max                       zip_levenshtein_sim 
+                                      830                                       830 
+                          zip_trigram_sim                      zip_levenshtein_term 
+                                      830                                       830 
+                         zip_trigram_term                             zip_including 
+                                      830                                         0 
+                             zip_equality                      street_intersect_min 
+                                        0                                       787 
+                     street_intersect_max                    street_levenshtein_sim 
+                                      787                                       787 
+                       street_trigram_sim                   street_levenshtein_term 
+                                      787                                       787 
+                      street_trigram_term                          street_including 
+                                      787                                         0 
+                          street_equality                     website_intersect_min 
+                                        0                                      1872 
+                    website_intersect_max                   website_levenshtein_sim 
+                                     1872                                      1872 
+                      website_trigram_sim                  website_levenshtein_term 
+                                     1872                                      1872 
+                     website_trigram_term                         website_including 
+                                     1872                                         0 
+                         website_equality                 countryname_intersect_min 
+                                        0                                       943 
+                countryname_intersect_max               countryname_levenshtein_sim 
+                                      943                                       943 
+                  countryname_trigram_sim              countryname_levenshtein_term 
+                                      943                                       943 
+                 countryname_trigram_term                     countryname_including 
+                                      943                                         0 
+                     countryname_equality        geocoderlocalityname_intersect_min 
+                                        0                                        37 
+       geocoderlocalityname_intersect_max      geocoderlocalityname_levenshtein_sim 
+                                       37                                        37 
+         geocoderlocalityname_trigram_sim     geocoderlocalityname_levenshtein_term 
+                                       37                                        37 
+        geocoderlocalityname_trigram_term            geocoderlocalityname_including 
+                                       37                                         0 
+            geocoderlocalityname_equality        geocoderinputaddress_intersect_min 
+                                        0                                        10 
+       geocoderinputaddress_intersect_max      geocoderinputaddress_levenshtein_sim 
+                                       10                                        10 
+         geocoderinputaddress_trigram_sim     geocoderinputaddress_levenshtein_term 
+                                       10                                        10 
+        geocoderinputaddress_trigram_term            geocoderinputaddress_including 
+                                       10                                         0 
+            geocoderinputaddress_equality       geocoderoutputaddress_intersect_min 
+                                        0                                         0 
+      geocoderoutputaddress_intersect_max     geocoderoutputaddress_levenshtein_sim 
+                                        0                                         0 
+        geocoderoutputaddress_trigram_sim    geocoderoutputaddress_levenshtein_term 
+                                        0                                         0 
+       geocoderoutputaddress_trigram_term           geocoderoutputaddress_including 
+                                        0                                         0 
+           geocoderoutputaddress_equality    geocoderpostalcodenumber_intersect_min 
+                                        0                                       154 
+   geocoderpostalcodenumber_intersect_max  geocoderpostalcodenumber_levenshtein_sim 
+                                      154                                       154 
+     geocoderpostalcodenumber_trigram_sim geocoderpostalcodenumber_levenshtein_term 
+                                      154                                       154 
+    geocoderpostalcodenumber_trigram_term        geocoderpostalcodenumber_including 
+                                      154                                         0 
+        geocoderpostalcodenumber_equality     geocodercountrynamecode_intersect_min 
+                                        0                                         1 
+    geocodercountrynamecode_intersect_max   geocodercountrynamecode_levenshtein_sim 
+                                        1                                         1 
+      geocodercountrynamecode_trigram_sim  geocodercountrynamecode_levenshtein_term 
+                                        1                                         1 
+     geocodercountrynamecode_trigram_term         geocodercountrynamecode_including 
+                                        1                                         0 
+         geocodercountrynamecode_equality                                phone_diff 
+                                        0                                      1389 
+                        phone_levenshtein                             phone_trigram 
+                                     1389                                      1389 
+                           phone_equality                                  fax_diff 
+                                        0                                      1989 
+                          fax_levenshtein                               fax_trigram 
+                                     1989                                      1989 
+                             fax_equality                        street_number_diff 
+                                        0                                       432 
+                street_number_levenshtein                     street_number_trigram 
+                                      432                                       432 
+                   street_number_equality             geocode_coordinates_long_diff 
+                                        0                                         0 
+     geocode_coordinates_long_levenshtein          geocode_coordinates_long_trigram 
+                                        0                                         0 
+        geocode_coordinates_long_equality              geocode_coordinates_lat_diff 
+                                        0                                         0 
+      geocode_coordinates_lat_levenshtein           geocode_coordinates_lat_trigram 
+                                        0                                         0 
+         geocode_coordinates_lat_equality                     coordinates_long_diff 
+                                        0                                       573 
+             coordinates_long_levenshtein                  coordinates_long_trigram 
+                                      573                                       573 
+                coordinates_long_equality                      coordinates_lat_diff 
+                                        0                                       573 
+              coordinates_lat_levenshtein                   coordinates_lat_trigram 
+                                      573                                       573 
+                 coordinates_lat_equality                  geocode_coordinates_diff 
+                                        0                                         0 
+                         coordinates_diff                                     label 
+  summary(city_levenshtein_sim)
+  
+
+ nomao$city_levenshtein_sim[which(is.na(city_levenshtein_sim))]<-mean(city_levenshtein_sim,na.rm=TRUE)
+ summary(city_levenshtein_term)
+ 
+ nomao$city_levenshtein_term[which(is.na(city_levenshtein_term))]<-mean(city_levenshtein_term,na.rm=TRUE)
+ summary(city_trigram_sim)
+ 
+  
+ nomao$city_trigram_sim[which(is.na(city_trigram_sim))]<-mean(city_trigram_sim,na.rm=TRUE)
+ summary(city_trigram_term)
+ 
+ nomao$city_trigram_term[which(is.na(city_trigram_term))]<-mean(city_trigram_term,na.rm=TRUE)
+
+ summary(nomao$city_intersect_max)
+
+
+ nomao$city_intersect_max[which(is.na(nomao$city_intersect_max))]<-mean(nomao$city_intersect_max,na.rm=TRUE)
+
+ summary(nomao$city_intersect_min)
+ 
+ nomao$city_intersect_min[which(is.na(nomao$city_intersect_min))]<-mean(nomao$city_intersect_min,na.rm=TRUE)
+
+
+  
+  summary(street_levenshtein_sim)
+  
+
+ nomao$street_levenshtein_sim[which(is.na(street_levenshtein_sim))]<-mean(street_levenshtein_sim,na.rm=TRUE)
+ summary(street_levenshtein_term)
+ 
+ nomao$street_levenshtein_term[which(is.na(street_levenshtein_term))]<-mean(street_levenshtein_term,na.rm=TRUE)
+ summary(street_trigram_sim)
+  
+ nomao$street_trigram_sim[which(is.na(street_trigram_sim))]<-mean(street_trigram_sim,na.rm=TRUE)
+ summary(street_trigram_term)
+ 
+ nomao$street_trigram_term[which(is.na(street_trigram_term))]<-mean(street_trigram_term,na.rm=TRUE)
+
+ summary(nomao$street_intersect_max)
+
+
+ nomao$street_intersect_max[which(is.na(nomao$street_intersect_max))]<-mean(nomao$street_intersect_max,na.rm=TRUE)
+
+ summary(nomao$street_intersect_min)
+ 
+ nomao$street_intersect_min[which(is.na(nomao$street_intersect_min))]<-mean(nomao$street_intersect_min,na.rm=TRUE)
+
+
+   summary(website_levenshtein_sim)
+  
+
+ nomao$website_levenshtein_sim[which(is.na(website_levenshtein_sim))]<-mean(website_levenshtein_sim,na.rm=TRUE)
+ summary(website_levenshtein_term)
+ 
+ nomao$website_levenshtein_term[which(is.na(website_levenshtein_term))]<-mean(website_levenshtein_term,na.rm=TRUE)
+ summary(website_trigram_sim)
+  
+ nomao$website_trigram_sim[which(is.na(website_trigram_sim))]<-mean(website_trigram_sim,na.rm=TRUE)
+ summary(website_trigram_term)
+ 
+ nomao$website_trigram_term[which(is.na(website_trigram_term))]<-mean(website_trigram_term,na.rm=TRUE)
+
+ summary(nomao$website_intersect_max)
+
+
+ nomao$website_intersect_max[which(is.na(nomao$website_intersect_max))]<-mean(nomao$website_intersect_max,na.rm=TRUE)
+
+ summary(nomao$website_intersect_min)
+ 
+ nomao$website_intersect_min[which(is.na(nomao$website_intersect_min))]<-mean(nomao$website_intersect_min,na.rm=TRUE)
+
+
+   summary(countryname_levenshtein_sim)
+  
+
+ nomao$countryname_levenshtein_sim[which(is.na(countryname_levenshtein_sim))]<-mean(countryname_levenshtein_sim,na.rm=TRUE)
+ summary(countryname_levenshtein_term)
+ 
+ nomao$countryname_levenshtein_term[which(is.na(countryname_levenshtein_term))]<-mean(countryname_levenshtein_term,na.rm=TRUE)
+ summary(countryname_trigram_sim)
+  
+ nomao$countryname_trigram_sim[which(is.na(countryname_trigram_sim))]<-mean(countryname_trigram_sim,na.rm=TRUE)
+ summary(countryname_trigram_term)
+ 
+ nomao$countryname_trigram_term[which(is.na(countryname_trigram_term))]<-mean(countryname_trigram_term,na.rm=TRUE)
+
+ summary(nomao$countryname_intersect_max)
+
+
+ nomao$countryname_intersect_max[which(is.na(nomao$countryname_intersect_max))]<-mean(nomao$countryname_intersect_max,na.rm=TRUE)
+
+ summary(nomao$countryname_intersect_min)
+ 
+ nomao$countryname_intersect_min[which(is.na(nomao$countryname_intersect_min))]<-mean(nomao$countryname_intersect_min,na.rm=TRUE)
+
+
+   summary(geocoderlocalityname_levenshtein_sim)
+  
+
+ nomao$geocoderlocalityname_levenshtein_sim[which(is.na(geocoderlocalityname_levenshtein_sim))]<-mean(geocoderlocalityname_levenshtein_sim,na.rm=TRUE)
+ summary(geocoderlocalityname_levenshtein_term)
+ 
+ nomao$geocoderlocalityname_levenshtein_term[which(is.na(geocoderlocalityname_levenshtein_term))]<-mean(geocoderlocalityname_levenshtein_term,na.rm=TRUE)
+ summary(geocoderlocalityname_trigram_sim)
+  
+ nomao$geocoderlocalityname_trigram_sim[which(is.na(geocoderlocalityname_trigram_sim))]<-mean(geocoderlocalityname_trigram_sim,na.rm=TRUE)
+ summary(geocoderlocalityname_trigram_term)
+ 
+ nomao$geocoderlocalityname_trigram_term[which(is.na(geocoderlocalityname_trigram_term))]<-mean(geocoderlocalityname_trigram_term,na.rm=TRUE)
+
+ summary(nomao$geocoderlocalityname_intersect_max)
+
+
+ nomao$geocoderlocalityname_intersect_max[which(is.na(nomao$geocoderlocalityname_intersect_max))]<-mean(nomao$geocoderlocalityname_intersect_max,na.rm=TRUE)
+
+ summary(nomao$geocoderlocalityname_intersect_min)
+ 
+ nomao$geocoderlocalityname_intersect_min[which(is.na(nomao$geocoderlocalityname_intersect_min))]<-mean(nomao$geocoderlocalityname_intersect_min,na.rm=TRUE)
+
+
+   summary(geocoderinputaddress_levenshtein_sim)
+  
+
+ nomao$geocoderinputaddress_levenshtein_sim[which(is.na(geocoderinputaddress_levenshtein_sim))]<-mean(geocoderinputaddress_levenshtein_sim,na.rm=TRUE)
+ summary(geocoderinputaddress_levenshtein_term)
+ 
+ nomao$geocoderinputaddress_levenshtein_term[which(is.na(geocoderinputaddress_levenshtein_term))]<-mean(geocoderinputaddress_levenshtein_term,na.rm=TRUE)
+ summary(geocoderinputaddress_trigram_sim)
+  
+ nomao$geocoderinputaddress_trigram_sim[which(is.na(geocoderinputaddress_trigram_sim))]<-mean(geocoderinputaddress_trigram_sim,na.rm=TRUE)
+ summary(geocoderinputaddress_trigram_term)
+ 
+ nomao$geocoderinputaddress_trigram_term[which(is.na(geocoderinputaddress_trigram_term))]<-mean(geocoderinputaddress_trigram_term,na.rm=TRUE)
+
+ summary(nomao$geocoderinputaddress_intersect_max)
+
+
+ nomao$geocoderinputaddress_intersect_max[which(is.na(nomao$geocoderinputaddress_intersect_max))]<-mean(nomao$geocoderinputaddress_intersect_max,na.rm=TRUE)
+
+ summary(nomao$geocoderinputaddress_intersect_min)
+ 
+ nomao$geocoderinputaddress_intersect_min[which(is.na(nomao$geocoderinputaddress_intersect_min))]<-mean(nomao$geocoderinputaddress_intersect_min,na.rm=TRUE)
+
+
+ summary(geocoderoutputaddress_levenshtein_sim)
+  
+
+ nomao$geocoderoutputaddress_levenshtein_sim[which(is.na(geocoderoutputaddress_levenshtein_sim))]<-mean(geocoderoutputaddress_levenshtein_sim,na.rm=TRUE)
+ summary(geocoderoutputaddress_levenshtein_term)
+ 
+ nomao$geocoderoutputaddress_levenshtein_term[which(is.na(geocoderoutputaddress_levenshtein_term))]<-mean(geocoderoutputaddress_levenshtein_term,na.rm=TRUE)
+ summary(geocoderoutputaddress_trigram_sim)
+  
+ nomao$geocoderoutputaddress_trigram_sim[which(is.na(geocoderoutputaddress_trigram_sim))]<-mean(geocoderoutputaddress_trigram_sim,na.rm=TRUE)
+ summary(geocoderoutputaddress_trigram_term)
+ 
+ nomao$geocoderoutputaddress_trigram_term[which(is.na(geocoderoutputaddress_trigram_term))]<-mean(geocoderoutputaddress_trigram_term,na.rm=TRUE)
+
+ summary(nomao$geocoderoutputaddress_intersect_max)
+
+
+ nomao$geocoderoutputaddress_intersect_max[which(is.na(nomao$geocoderoutputaddress_intersect_max))]<-mean(nomao$geocoderoutputaddress_intersect_max,na.rm=TRUE)
+
+ summary(nomao$geocoderoutputaddress_intersect_min)
+ 
+ nomao$geocoderoutputaddress_intersect_min[which(is.na(nomao$geocoderoutputaddress_intersect_min))]<-mean(nomao$geocoderoutputaddress_intersect_min,na.rm=TRUE)
+
+
+   summary(geocoderpostalcodenumber_levenshtein_sim)
+  
+
+ nomao$geocoderpostalcodenumber_levenshtein_sim[which(is.na(geocoderpostalcodenumber_levenshtein_sim))]<-mean(geocoderpostalcodenumber_levenshtein_sim,na.rm=TRUE)
+ summary(geocoderpostalcodenumber_levenshtein_term)
+ 
+ nomao$geocoderpostalcodenumber_levenshtein_term[which(is.na(geocoderpostalcodenumber_levenshtein_term))]<-mean(geocoderpostalcodenumber_levenshtein_term,na.rm=TRUE)
+ summary(geocoderpostalcodenumber_trigram_sim)
+  
+ nomao$geocoderpostalcodenumber_trigram_sim[which(is.na(geocoderpostalcodenumber_trigram_sim))]<-mean(geocoderpostalcodenumber_trigram_sim,na.rm=TRUE)
+ summary(geocoderpostalcodenumber_trigram_term)
+ 
+ nomao$geocoderpostalcodenumber_trigram_term[which(is.na(geocoderpostalcodenumber_trigram_term))]<-mean(geocoderpostalcodenumber_trigram_term,na.rm=TRUE)
+
+ summary(nomao$geocoderpostalcodenumber_intersect_max)
+
+
+ nomao$geocoderpostalcodenumber_intersect_max[which(is.na(nomao$geocoderpostalcodenumber_intersect_max))]<-mean(nomao$geocoderpostalcodenumber_intersect_max,na.rm=TRUE)
+
+ summary(nomao$geocoderpostalcodenumber_intersect_min)
+ 
+ nomao$geocoderpostalcodenumber_intersect_min[which(is.na(nomao$geocoderpostalcodenumber_intersect_min))]<-mean(nomao$geocoderpostalcodenumber_intersect_min,na.rm=TRUE)
+
+
+   summary(geocodercountrynamecode_levenshtein_sim)
+  
+
+ nomao$geocodercountrynamecode_levenshtein_sim[which(is.na(geocodercountrynamecode_levenshtein_sim))]<-mean(geocodercountrynamecode_levenshtein_sim,na.rm=TRUE)
+ summary(geocodercountrynamecode_levenshtein_term)
+ 
+ nomao$geocodercountrynamecode_levenshtein_term[which(is.na(geocodercountrynamecode_levenshtein_term))]<-mean(geocodercountrynamecode_levenshtein_term,na.rm=TRUE)
+ summary(geocodercountrynamecode_trigram_sim)
+  
+ nomao$geocodercountrynamecode_trigram_sim[which(is.na(geocodercountrynamecode_trigram_sim))]<-mean(geocodercountrynamecode_trigram_sim,na.rm=TRUE)
+ summary(geocodercountrynamecode_trigram_term)
+ 
+ nomao$geocodercountrynamecode_trigram_term[which(is.na(geocodercountrynamecode_trigram_term))]<-mean(geocodercountrynamecode_trigram_term,na.rm=TRUE)
+
+ summary(nomao$geocodercountrynamecode_intersect_max)
+
+
+ nomao$geocodercountrynamecode_intersect_max[which(is.na(nomao$geocodercountrynamecode_intersect_max))]<-mean(nomao$geocodercountrynamecode_intersect_max,na.rm=TRUE)
+
+ summary(nomao$geocodercountrynamecode_intersect_min)
+ 
+ nomao$geocodercountrynamecode_intersect_min[which(is.na(nomao$geocodercountrynamecode_intersect_min))]<-mean(nomao$geocodercountrynamecode_intersect_min,na.rm=TRUE)
+
+
+  
+ summary(phone_diff)
+   
+ nomao$phone_diff[which(is.na(nomao$phone_diff))]<-mean(nomao$phone_diff,na.rm = TRUE)
+ summary(phone_levenshtein)
+ 
+ nomao$phone_levenshtein[which(is.na(nomao$phone_levenshtein))]<-mean(nomao$phone_levenshtein,na.rm = TRUE)
+  summary(phone_trigram)
+ nomao$phone_trigram[which(is.na(nomao$phone_trigram))]<-mean(nomao$phone_trigram,na.rm = TRUE)
+
+ summary(fax_diff)
+   
+ nomao$fax_diff[which(is.na(nomao$fax_diff))]<-mean(nomao$fax_diff,na.rm = TRUE)
+ summary(fax_levenshtein)
+ 
+ nomao$fax_levenshtein[which(is.na(nomao$fax_levenshtein))]<-mean(nomao$fax_levenshtein,na.rm = TRUE)
+  summary(fax_trigram)
+ nomao$fax_trigram[which(is.na(nomao$fax_trigram))]<-mean(nomao$fax_trigram,na.rm = TRUE)
+
+ summary(street_number_diff)
+   
+ nomao$street_number_diff[which(is.na(nomao$street_number_diff))]<-mean(nomao$street_number_diff,na.rm = TRUE)
+ summary(street_number_levenshtein)
+ 
+ nomao$street_number_levenshtein[which(is.na(nomao$street_number_levenshtein))]<-mean(nomao$street_number_levenshtein,na.rm = TRUE)
+  summary(street_number_trigram)
+ nomao$street_number_trigram[which(is.na(nomao$street_number_trigram))]<-mean(nomao$street_number_trigram,na.rm = TRUE)
+
+ summary(coordinates_long_diff)
+   
+ nomao$coordinates_long_diff[which(is.na(nomao$coordinates_long_diff))]<-mean(nomao$coordinates_long_diff,na.rm = TRUE)
+ summary(coordinates_long_levenshtein)
+ 
+ nomao$coordinates_long_levenshtein[which(is.na(nomao$coordinates_long_levenshtein))]<-mean(nomao$coordinates_long_levenshtein,na.rm = TRUE)
+  summary(coordinates_long_trigram)
+ nomao$coordinates_long_trigram[which(is.na(nomao$coordinates_long_trigram))]<-mean(nomao$coordinates_long_trigram,na.rm = TRUE)
+
+ summary(coordinates_long_diff)
+   
+ nomao$coordinates_long_diff[which(is.na(nomao$coordinates_long_diff))]<-mean(nomao$coordinates_long_diff,na.rm = TRUE)
+ summary(coordinates_long_levenshtein)
+ 
+ nomao$coordinates_long_levenshtein[which(is.na(nomao$coordinates_long_levenshtein))]<-mean(nomao$coordinates_long_levenshtein,na.rm = TRUE)
+  summary(coordinates_long_trigram)
+ nomao$coordinates_long_trigram[which(is.na(nomao$coordinates_long_trigram))]<-mean(nomao$coordinates_long_trigram,na.rm = TRUE)
+ 
+ 
+ summary(coordinates_lat_diff)
+   
+ nomao$coordinates_lat_diff[which(is.na(nomao$coordinates_lat_diff))]<-mean(nomao$coordinates_lat_diff,na.rm = TRUE)
+ summary(coordinates_lat_levenshtein)
+ 
+ nomao$coordinates_lat_levenshtein[which(is.na(nomao$coordinates_lat_levenshtein))]<-mean(nomao$coordinates_lat_levenshtein,na.rm = TRUE)
+  summary(coordinates_lat_trigram)
+ nomao$coordinates_lat_trigram[which(is.na(nomao$coordinates_lat_trigram))]<-mean(nomao$coordinates_lat_trigram,na.rm = TRUE)
+
+ summary(coordinates_lat_diff)
+   
+ nomao$coordinates_lat_diff[which(is.na(nomao$coordinates_lat_diff))]<-mean(nomao$coordinates_lat_diff,na.rm = TRUE)
+ summary(coordinates_lat_levenshtein)
+ 
+ nomao$coordinates_lat_levenshtein[which(is.na(nomao$coordinates_lat_levenshtein))]<-mean(nomao$coordinates_lat_levenshtein,na.rm = TRUE)
+  summary(coordinates_lat_trigram)
+ nomao$coordinates_lat_trigram[which(is.na(nomao$coordinates_lat_trigram))]<-mean(nomao$coordinates_lat_trigram,na.rm = TRUE)
+summary(coordinates_diff)
+   
+ nomao$coordinates_diff[which(is.na(nomao$coordinates_diff))]<-mean(nomao$coordinates_diff,na.rm = TRUE)
+ 
